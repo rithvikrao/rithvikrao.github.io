@@ -13,3 +13,4 @@ assets/img/*
 assets/img/avatars/*
 !assets/img/avatars/avatar.png
 export.sh
+error.log
