@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Research | Rithvik Rao</title>
+    <meta name="description" content="Junior at Harvard College studying computer science, mathematics, and economics. ">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="index.html">Rithvik Rao</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="assets/resume.pdf">Resumé</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-me.html">Contact me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page projets-page">
+        <section class="portfolio-block project-no-images">
+            <div class="container">
+                <div class="heading">
+                    <h2>PAPERS</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-12">
+                        <div class="project-card-no-image">
+                            <h3><strong>Low-cost attacks on Ethereum 2.0 by sub-1/3 stakeholders</strong></h3>
+                            <h4><strong>With&nbsp;</strong><a href="https://michaelneuder.github.io/"><strong>Michael Neuder</strong></a><strong>,&nbsp;</strong><a href="https://www.seas.harvard.edu/person/daniel-moroz"><strong>Daniel J. Moroz</strong></a><strong>, and&nbsp;</strong><a href="https://www.eecs.harvard.edu/~parkes/"><strong>David C. Parkes</strong></a><br><br><strong>GTiB '20:</strong>&nbsp;<a href="https://econcs.pku.edu.cn/wine2020/Workshop_on_Blockchain.htm"><strong>Workshop on Game Theory in Blockchain at WINE 2020</strong></a><strong> (December 2020)</strong><br><br>We outline two dishonest strategies that can be cheaply executed on the Ethereum 2.0 beacon chain, even by validators holding less than one-third of the total stake: malicious chain reorganizations ("reorgs") and finality delays. In a malicious reorg, an attacker withholds their blocks and attestations before releasing them at an opportune time in order to force a chain reorganization, which they can take advantage of by double-spending or front-running transactions. A finality delay aims to increase the mean and variance of the time it takes blocks to become finalized and thus impacts the efficiency and predictability of the system. We provide a probabilistic and cost analysis for each of these attacks for a validator with 30% of the total stake.<br></h4><a class="btn btn-outline-primary btn-sm" role="button" href="assets/eth2-attacks-gtib20.pdf">PDF</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                        <div class="project-card-no-image">
+                            <h3><strong>Defending Against Malicious Reorgs in Tezos Proof-of-Stake</strong></h3>
+                            <h4><strong>With&nbsp;</strong><a href="https://michaelneuder.github.io/"><strong>Michael Neuder</strong></a><strong>,&nbsp;</strong><a href="https://www.seas.harvard.edu/person/daniel-moroz"><strong>Daniel J. Moroz</strong></a><strong>, and&nbsp;</strong><a href="https://www.eecs.harvard.edu/~parkes/"><strong>David C. Parkes</strong></a><br><br><strong>AFT&nbsp;'20:&nbsp;</strong><a href="https://aft.acm.org/program-2020"><strong>2nd ACM&nbsp;Conference on Advances in Financial Technologies</strong></a><strong>&nbsp;(October 2020)</strong><br><br>Blockchains are intended to be immutable, so an attacker who is able to delete transactions through a chain reorganization (a malicious reorg) can perform a profitable double-spend attack. We study the rate at which an attacker can execute reorgs in the Tezos Proof-of-Stake protocol. As an example, an attacker with 40% of the staking power is able to execute a 20-block malicious reorg at an average rate of once per day, and the attack probability increases super-linearly as the staking power grows beyond 40%. Moreover, an attacker of the Tezos protocol knows in advance when an attack opportunity will arise, and can use this knowledge to arrange transactions to double-spend. We show that in particular cases, the Tezos protocol can be adjusted to protect against deep reorgs. For instance, we demonstrate protocol parameters that reduce the rate of length-20 reorg opportunities for a 40% attacker by two orders of magnitude. We also observe a trade-off between optimizing for robustness to deep reorgs (costly deviations that may be net profitable because they enable double-spends) and robustness to selfish mining (mining deviations that result in typically short reorgs that are profitable even without double-spends). That is, the parameters that optimally protect against one make the other attack easy. Finally, we develop a method that monitors the Tezos blockchain health with respect to malicious reorgs using only publicly available information.<br></h4><a class="btn btn-outline-primary btn-sm" role="button" href="assets/tezos-reorgs-aft20.pdf">PDF</a><a class="btn btn-outline-primary btn-sm" role="button" href="https://dl.acm.org/doi/10.1145/3419614.3423265">Proceedings</a><a class="btn btn-outline-primary btn-sm" role="button" href="https://arxiv.org/abs/2009.05413">arXiv</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                        <div class="project-card-no-image">
+                            <h3><strong>Selfish Behavior in the Tezos Proof-of-Stake Protocol</strong><br></h3>
+                            <h4><strong>With&nbsp;</strong><a href="https://michaelneuder.github.io/"><strong>Michael Neuder</strong></a><strong>,&nbsp;</strong><a href="https://www.seas.harvard.edu/person/daniel-moroz"><strong>Daniel J. Moroz</strong></a><strong>, and&nbsp;</strong><a href="https://www.eecs.harvard.edu/~parkes/"><strong>David C. Parkes</strong></a><br><br><strong>CES&nbsp;'20:&nbsp;Cryptoeconomic Systems </strong><a href="https://cryptoeconomicsystems.pubpub.org/ces20-program"><strong>Conference</strong></a><strong> and </strong><a href="https://cryptoeconomicsystems.pubpub.org/spring20-journalcfp"><strong>Journal</strong></a><strong>&nbsp;(March 2020)</strong><br><br>Proof-of-Stake consensus protocols give rise to complex modeling challenges. We analyze the recently-updated Tezos Proof-of-Stake protocol and demonstrate that, under certain conditions, rational participants are incentivized to behave dishonestly. In doing so, we provide a theoretical analysis of the feasibility and profitability of a block stealing attack that we call selfish endorsing, a concrete instance of an attack previously only theoretically considered. We propose and analyze a simple change to the Tezos protocol which significantly reduces the (already small) profitability of this dishonest behavior, and introduce a new delay and reward scheme that is provably secure against length-1 and length-2 selfish endorsing attacks. Our framework provides a template for analyzing other Proof-of-Stake implementations for selfish behavior.<br></h4><a class="btn btn-outline-primary btn-sm" role="button" href="assets/tezos-selfish-ces20.pdf">PDF</a><a class="btn btn-outline-primary btn-sm" role="button" href="https://arxiv.org/abs/1912.02954">arXiv</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
+            <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram-outline"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/smart-forms.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
